@@ -1,0 +1,46 @@
+<section class="photo-gallery">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Image Gallery</h2>
+            <p class="text-center">Select any picture to enlarge it, click delete to erase it</p>
+        </div>
+        <div class="row photos" data-bss-baguettebox="">
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/desk.jpg">
+                    <div style="margin: 20px;">
+                        <p class="d-inline">Paragraph</p><button class="btn btn-danger btn-sm d-inline float-end" type="button" style="padding: 5px 12px;margin: -5px;">Delete</button>
+                    </div>
+                </a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/building.jpg"></a>
+                <div style="margin: 20px;">
+                    <p class="d-inline">Paragraph</p><button class="btn btn-danger btn-sm d-inline float-end" type="button" style="padding: 5px 12px;margin: -5px;">Delete</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/loft.jpg">
+                    <div style="margin: 20px;">
+                        <p class="d-inline">Paragraph</p><button class="btn btn-danger btn-sm d-inline float-end" type="button" style="padding: 5px 12px;margin: -5px;">Delete</button>
+                    </div>
+                </a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/building.jpg">
+                    <div style="margin: 20px;">
+                        <p class="d-inline">Paragraph</p><button class="btn btn-danger btn-sm d-inline float-end" type="button" style="padding: 5px 12px;margin: -5px;">Delete</button>
+                    </div>
+                </a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/loft.jpg">
+                    <div style="margin: 20px;">
+                        <p class="d-inline">Paragraph</p><button class="btn btn-danger btn-sm d-inline float-end" type="button" style="padding: 5px 12px;margin: -5px;">Delete</button>
+                    </div>
+                </a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/desk.jpg"></a>
+                <div style="margin: 20px;">
+                    <p class="d-inline">Paragraph</p><button class="btn btn-danger btn-sm d-inline float-end" type="button" style="padding: 5px 12px;margin: -5px;">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<ul>
+    <li *ngFor="let item of collection.data | paginate: { itemsPerPage: 10, currentPage: p }">  </li>
+  </ul>
+
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>

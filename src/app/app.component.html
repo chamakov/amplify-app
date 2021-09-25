@@ -1,0 +1,33 @@
+<nav class="navbar navbar-light navbar-expand-lg bg-white clean-navbar">
+  <div class="container"><a class="navbar-brand logo" href="#">Luminitas Rekog-App</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" 
+                routerLink="/home-gallery" routerLinkActive="active">Home</a></li>
+              <li *ngIf="authState == 'signedin'" class="nav-item"><a class="nav-link" routerLink="/upload-image" routerLinkActive="active">Upload image</a></li>
+              <li *ngIf="authState == 'signedin'" class="nav-item">
+                <amplify-sign-out></amplify-sign-out>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+  <amplify-authenticator *ngIf="authState !== 'signedin'">
+    <amplify-sign-in
+    hideSignUp=true
+    header-text="Sign In - Luminitas Rekog-app"
+    slot="sign-in">
+    </amplify-sign-in>
+  </amplify-authenticator>
+
+  <div *ngIf="authState === 'signedin' && user" class="App">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="page-footer dark">
+    <div class="footer-copyright">
+        <p>© 2021 Copyright Luminitas-Team</p>
+    </div>
+</footer>
+

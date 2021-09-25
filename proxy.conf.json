@@ -1,0 +1,10 @@
+{
+    "/LumiRekogApi:" :{
+        "target" : "https://dyq0v4lcs0.execute-api.us-east-1.amazonaws.com",
+        "secure" : true,
+        "changeOrigin" : true,
+        "pathRewrite" : {
+            "^/api" : ""
+        }
+    }
+}
