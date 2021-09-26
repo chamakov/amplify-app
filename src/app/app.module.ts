@@ -7,8 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeGalleryComponent } from './home-gallery/home-gallery.component';
 import { UploadImageComponent } from './upload-image/upload-image.component';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { HttpClient } from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { HttpClient } from '@angular/common/http';
     AppRoutingModule,
     AmplifyUIAngularModule,
     NgxPaginationModule,
-    HttpClient,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

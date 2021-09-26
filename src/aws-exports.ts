@@ -4,13 +4,13 @@
 const awsmobile = {
     "aws_project_region": "us-east-1",
     "aws_cognito_region": "us-east-1",
-    "aws_user_pools_id": "us-east-1_u8AgdetFK",
-    "aws_user_pools_web_client_id": "57k85ifbh1k97adua1uuleqgq5",
+    "aws_user_pools_id": "us-east-1_6m3DTJXRr",
+    "aws_user_pools_web_client_id": "218nsog7o11f5n932ec3a7clg9",
     "oauth": {},
     "aws_cloud_logic_custom": [
         {
             "name": "LumiapirekogdevEndpoint69B7D6A1",
-            "endpoint": " https://dyq0v4lcs0.execute-api.us-east-1.amazonaws.com/prod",
+            "endpoint": "https://kkmctw4v3e.execute-api.us-east-1.amazonaws.com/prod",
             "region": "us-east-1"
         }
     ]

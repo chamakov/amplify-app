@@ -25,7 +25,9 @@ export class AppComponent {
       this.user = authData as CognitoUserInterface;
       this.ref.detectChanges();
 
-      this.idToken = this.user?.signInUserSession.idToken.jwtToken; 
+      this.idToken = this.user?.signInUserSession.idToken.jwtToken;
+      localStorage.setItem('tokenSesionUsuario', this.idToken);
+      console.log(this.idToken);
     })
   }
 

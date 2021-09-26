@@ -27,5 +27,28 @@
         }
       }
     }
+  },
+  "lumihack": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyapp-lumihack-185906-authRole",
+      "UnauthRoleArn": "arn:aws:iam::135493825264:role/amplify-amplifyapp-lumihack-185906-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::135493825264:role/amplify-amplifyapp-lumihack-185906-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifyapp-lumihack-185906-deployment",
+      "UnauthRoleName": "amplify-amplifyapp-lumihack-185906-unauthRole",
+      "StackName": "amplify-amplifyapp-lumihack-185906",
+      "StackId": "arn:aws:cloudformation:us-east-1:135493825264:stack/amplify-amplifyapp-lumihack-185906/993eb190-1e5c-11ec-981d-0e160d49c2f5",
+      "AmplifyAppId": "d1b03n41g8719z"
+    },
+    "categories": {
+      "auth": {
+        "amplifyappe5e81692": {
+          "userPoolId": "us-east-1_6m3DTJXRr",
+          "userPoolName": "LuminitasusrpoolC6ACE387-ySRmAR2icEh0",
+          "webClientId": "218nsog7o11f5n932ec3a7clg9",
+          "nativeClientId": "218nsog7o11f5n932ec3a7clg9"
+        }
+      }
+    }
   }
 }
